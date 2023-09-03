@@ -3,7 +3,7 @@ start = int(input("Enter the start number: "))
 end = int(input("Enter the end number: "))
 
 # Calculate the number of rows and columns
-num_rows = end - start + 1
+
 num_columns = end - start + 2
 
 # Print the header row
