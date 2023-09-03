@@ -37,7 +37,7 @@ for month, phoneCount in enumerate(monthlySalesList):
     # Check if cumulative bonus exceeds 10,0000
     cumulativeBonus += currentMonthSalary - baseSalary
     if cumulativeBonus > 100000:
-        baseSalary *= 0.5 # Increase the base salary by 5% for the next month
+        baseSalary *= 0.05 # Increase the base salary by 5% for the next month
         cumulativeBonus=0  # Reset cumulative bonus
 
     print(f"This {month} month salary: {currentMonthSalary}")
