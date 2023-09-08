@@ -1,6 +1,7 @@
 print("  \tyou can calculate upto 500 units \n Because the program is based on Average units consumed in house")
 Units = float(input("Enter The Number of units : "))
 rate = [0,2.25,4.5,6]
+
 if Units>=1 and Units<=100:
     rate=rate[0]
     #calculation how the unit bill is generated
