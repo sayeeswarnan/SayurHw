@@ -44,33 +44,5 @@ print(f"Final words is : {String}")
 
 
 
-# inputwords = "I am Python"  # Example input words
-# pigLatinKey = 'ay'
-# vowels = ['a', 'e', 'i', 'o', 'u']
 
-# # Split the input words into words
-# for word in inputwords.split():
-#     # Initialize the index of the first vowel
-#     first_vowel_index = 0
-
-#     # Check if the word has more than one character
-#     if len(word) > 1:
-#         # Iterate through the characters of the word
-#         for index, char in enumerate(word):
-#             # Check if the character is a vowel
-#             if char.lower() in vowels:
-#                 first_vowel_index = index
-#                 break  # Exit the loop when the first vowel is found
-
-#     # Apply Pig Latin transformation to the word
-#     if first_vowel_index > 0:  # Check if there is at least one vowel in the word
-#         prefix = word[:first_vowel_index]  # Get the characters before the first vowel
-#         rest_of_word = word[first_vowel_index:]  # Get the characters from the first vowel onwards
-#         pigLatinWord = rest_of_word + prefix + pigLatinKey  # Form the Pig Latin word
-#     else:
-#         # If there are no vowels in the word, treat it as a special case
-#         pigLatinWord = word + pigLatinKey
-
-#     # Print the Pig Latin word with a space
-#     print(pigLatinWord, end=" ")
 
