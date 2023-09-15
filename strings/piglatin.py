@@ -14,22 +14,29 @@
 #     word = word[1:] + firstChar + pigLatinKey
 #     print( #FillinMissingCode)
 
+# Prompt the user to enter a sentence
 inputSentence = input("Enter the string : ")
-inputSentence=inputSentence 
-pigLatinKey = 'ay' #set piglatinkey
-vowels = ['a','e','i','o','u','A','E','I','O','U']#set vowels on list
-words=inputSentence.split(" ") #spliting the sentences into words 
-sentence=""#set empty string 
-for word in words: #gets the word in a sentence
-   
-    first_vowel_index = 0
-    #FillinMissingCode - check if the word has more than one char
-    for index, char in enumerate(word): #returns both the index and the char in the word
-        if char in vowels: 
-            first_vowel_index = index
-            break
-    # string slicing to add words 
 
-    sentence = sentence + word[first_vowel_index+1:] +word[:first_vowel_index + 1] + pigLatinKey #adding  ay at end
-    sentence+=" "   # adding space at end of each word
-print(f"Final sentence is : {sentence}")
+# Pig Latin key
+pigLatinKey = 'ay'
+
+# Loop through each word in the input sentence
+for word in inputSentence.split():  # Splitting the input into words
+
+    # Take the first character
+    firstChar = word[0]
+
+    # Check if the word has more than one character
+    if len(word) > 1:
+        # Remove the first character, add it to the end, and add 'ay' to it
+        word = word[1:] + firstChar + pigLatinKey
+    else:
+        # If the word has only one character, just add 'ay' to it
+        word = word + pigLatinKey
+
+    # Print the Pig Latin version of the word
+    print(word, end=' ')  # Printing with a space separator
+
+# Print a newline to separate the final Pig Latin sentence from the prompt
+print()
+
